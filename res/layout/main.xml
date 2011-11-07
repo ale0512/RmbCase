@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/bg">
+
+	<TextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/title"
+		android:textColor="@color/grey" android:layout_margin="15dip"
+		android:shadowRadius="3.0" android:gravity="center" android:textSize="24sp" />
+
+	<TextView android:id="@+id/label" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/lc_amount"
+		android:textColor="@color/black" android:layout_margin="10dip"
+		android:shadowRadius="3.0" android:textStyle="bold" android:textSize="20sp"
+		android:layout_below="@+id/title" />
+
+	<EditText android:id="@+id/EditText01" android:cursorVisible="true"
+		android:lines="1" android:textSize="50sp" android:layout_margin="10dip"
+		android:background="@android:drawable/editbox_background"
+		android:gravity="right" android:layout_height="80dp" 
+		android:inputType="numberDecimal" android:layout_width="fill_parent"
+		android:layout_below="@id/label" />
+
+	<Button android:text="@string/rst_name" android:layout_height="wrap_content"
+		android:layout_below="@+id/EditText01" android:layout_width="wrap_content"
+		android:width="100dp" android:height="40dp" android:id="@+id/button_rst"
+		android:layout_alignRight="@+id/EditText01"></Button>
+
+	<Button android:text="@string/btu_name" android:layout_height="wrap_content"
+		android:width="100dp" android:height="40dp" android:layout_toLeftOf="@+id/button_rst"
+		android:layout_width="wrap_content" android:id="@+id/button_ok"
+		android:layout_alignTop="@+id/button_rst" android:layout_alignBottom="@+id/button_rst"></Button>
+	<!-- 大写金额 Label -->
+	<TextView android:text="@string/uc_amount"
+		android:layout_margin="10dip" android:layout_height="wrap_content"
+		android:layout_below="@id/button_ok" android:id="@+id/uc_label"
+		android:layout_width="wrap_content" android:textColor="@color/black"
+		android:shadowRadius="3.0" android:visibility="gone"
+		android:textStyle="bold" android:textSize="20sp"></TextView>
+
+	<TextView android:text="@string/uc_rmb" android:layout_height="wrap_content"
+		android:layout_below="@+id/uc_label" android:id="@+id/rmb"
+		android:layout_margin="10dip" android:layout_width="wrap_content"
+		android:textSize="30sp" android:textColor="@color/black"
+		android:shadowRadius="3.0" android:layout_alignRight="@+id/textView1"></TextView>
+
+</RelativeLayout>

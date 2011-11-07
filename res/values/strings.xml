@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">人民币大写转换</string>
+    <string name="app_name">人民币大写转换</string>
+    <string name="title">人民币大写转换</string>
+    <string name="btu_name">确定</string>
+    <string name="rst_name">清空</string>
+    <string name="lc_amount">小写金额:</string>
+    <string name="uc_amount">大写金额:</string>
+    <string name="uc_rmb"></string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_msg">您确定要退出吗?</string>
+    <string name="dialog_yes">确定</string>
+    <string name="dialog_no">取消</string>
+    <string name="about_name">关于</string> 
+</resources> 
+ 
